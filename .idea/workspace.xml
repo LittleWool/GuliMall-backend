@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51c5d488-e701-4f70-b03e-7a4e5630bb4a" name="Changes" comment="初始化">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="51c5d488-e701-4f70-b03e-7a4e5630bb4a" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/renren-fast" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -480,7 +479,7 @@
       <workItem from="1740099336947" duration="11386000" />
       <workItem from="1740128015013" duration="308000" />
       <workItem from="1740187216962" duration="1299000" />
-      <workItem from="1740188530458" duration="2135000" />
+      <workItem from="1740188530458" duration="2418000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md.&#10;&#10;Signed-off-by: 独孤求胜 &lt;sunlightcs@gmail.com&gt;&#10;!14 排序文件不可排序日志&#10;Merge pull request !14 from abilited/master">
       <option name="closed" value="true" />
@@ -506,7 +505,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740190192954</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test">
+      <option name="closed" value="true" />
+      <created>1740190916448</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740190916449</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,6 +535,32 @@
     <option featureType="com.intellij.facetType" implementationName="JRebel" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -535,7 +568,25 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </State>
@@ -547,7 +598,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update README.md.&#10;&#10;Signed-off-by: 独孤求胜 &lt;sunlightcs@gmail.com&gt;&#10;!14 排序文件不可排序日志&#10;Merge pull request !14 from abilited/master" />
     <MESSAGE value="初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
