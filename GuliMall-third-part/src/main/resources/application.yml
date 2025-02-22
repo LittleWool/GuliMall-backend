@@ -1,0 +1,20 @@
+server:
+  port: 30000
+spring:
+  application:
+    name: gulimall-third-part
+  cloud:
+    alicloud:
+      access-key:
+      secret-key:
+      oss:
+        endpoint: oss-cn-beijing.aliyuncs.com
+      bucket: gulimall-angenao
+      sms:
+        host: https://gyytz.market.alicloudapi.com
+        path: /sms/smsSend
+        method: POST
+        appcode:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.183:8848

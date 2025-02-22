@@ -1,0 +1,96 @@
+server:
+  port: 88
+spring:
+  profiles:
+    active: dev
+  application:
+    name: gulimall-gateway
+  cloud:
+    gateway:
+      routes:
+        #商品服务
+        - id: product_route # 路由规则id，自定义，唯一
+          uri: lb://gulimall-product # 路由的目标服务，lb代表负载均衡，会从注册中心拉取服务列表
+          predicates: # 路由断言，判断当前请求是否符合当前规则，符合则路由到目标服务
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        #商品服务
+        - id: coupon_route # 路由规则id，自定义，唯一
+          uri: lb://gulimall-coupon # 路由的目标服务，lb代表负载均衡，会从注册中心拉取服务列表
+          predicates: # 路由断言，判断当前请求是否符合当前规则，符合则路由到目标服务
+            - Path=/api/coupon/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        #库存服务
+        - id: ware_route
+          uri: lb://gulimall-ware
+          predicates:
+            - Path=/api/ware/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        #会员服务
+        - id: member_route
+          uri: lb://gulimall-member
+          predicates:
+            - Path=/api/member/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+
+
+        #第三方服务（如OSS）
+        - id: third_part
+          uri: lb://gulimall-third-part
+          predicates:
+            - Path=/api/thirdPart/**
+          filters:
+            - RewritePath=/api/thirdPart/(?<segment>.*),/$\{segment}
+
+        #renrenfast
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}
+
+
+        - id: gulimall_host_route
+          uri: lb://gulimall-product
+          predicates:
+            - Host=gulimall.com,item.gulimall.com
+
+        - id: search_route
+          uri: lb://gulimall-search
+          predicates:
+            - Host=search.gulimall.com
+
+        - id: auth_route
+          uri: lb://gulimall-auth-server
+          predicates:
+            - Host=auth.gulimall.com
+
+        #购物车服务
+        - id: cart_route
+          uri: lb://gulimall-cart
+          predicates:
+            - Host=cart.gulimall.com
+
+
+        #订单服务
+        - id: order_route
+          uri: lb://gulimall-order
+          predicates:
+            - Host=order.gulimall.com
+        #秒杀服务
+        - id: seckill_route
+          uri: lb://gulimall-seckill
+          predicates:
+            - Host=seckill.gulimall.com
+
+
+

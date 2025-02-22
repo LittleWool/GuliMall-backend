@@ -1,0 +1,14 @@
+
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/gulimall_ums?serverTimezone=GMT%2b8
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.183:8848
+  redis:
+    host: 192.168.31.183
+  session:
+    store-type: redis

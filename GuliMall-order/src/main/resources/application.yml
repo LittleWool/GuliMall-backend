@@ -1,0 +1,45 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: gulimall-order
+  datasource:
+    username: root
+    password: root
+#    url: jdbc:mysql://localhost:3306/gulimall_oms?serverTimezone=GMT%2b8
+    url: jdbc:mysql://localhost:3306/gulimall_oms?serverTimezone=GMT%2b8&&useInformationSchema=false
+  redis:
+    host: 192.168.31.183
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.183:8848
+  rabbitmq:
+    host: 192.168.31.183
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+  session:
+    store-type: redis
+
+
+mybatis-plus:
+  #id自增
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:/mapper/**/*.xml
+
+gulimall:
+  thread:
+    max-pool-size: 200
+    core-pool-size: 10
+    keep-alive-seconds: 10
+    queue-capacity: 10
+
+logging:
+    level:
+      com.angenao.gulimall.order.service.impl.OrderServiceImpl : debug
+
+

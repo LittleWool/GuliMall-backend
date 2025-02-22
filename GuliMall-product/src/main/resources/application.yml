@@ -1,0 +1,29 @@
+server:
+  port: 15000
+mybatis-plus:
+  #id自增
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  mapper-locations: classpath:/mapper/**/*.xml
+logging:
+  level:
+    com.angenao.gulimall.product.dao: debug
+    com.angenao.gulimall.product.web: debug
+spring:
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd hh:mm:ss
+    time-zone: GMT+8
+  thymeleaf:
+    cache: false
+
+gulimall:
+  thread:
+    max-pool-size: 200
+    core-pool-size: 10
+    keep-alive-seconds: 10
+    queue-capacity: 10

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="GuliMall-member" />
+        <module name="renren-fast" />
+        <module name="GuliMall-order" />
+        <module name="GuliMall-gateway" />
+        <module name="renren-generator" />
+      </profile>
+      <profile name="Annotation profile for GuliMall" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../../Dev/MAVEN/mvn-repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../Dev/MAVEN/mvn-repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="GuliMall-coupon" />
+        <module name="GuliMall-common" />
+        <module name="GuliMall-product" />
+      </profile>
+      <profile name="Annotation profile for GuliMall-cart" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../../Dev/MAVEN/mvn-repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="GuliMall-cart" />
+      </profile>
+      <profile name="Annotation profile for GuliMall-third-part" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../../Dev/MAVEN/mvn-repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="GuliMall-third-part" />
+      </profile>
+      <profile name="Annotation profile for GuliMall-search" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../../Dev/MAVEN/mvn-repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="GuliMall-search" />
+      </profile>
+      <profile name="Annotation profile for GuliMall-auth-server" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../../Dev/MAVEN/mvn-repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="GuliMall-auth-server" />
+      </profile>
+      <profile name="Annotation profile for GuliMall-ware" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../../Dev/MAVEN/mvn-repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="GuliMall-ware" />
+      </profile>
+      <profile name="Annotation profile for GuliMall-seckill" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../../Dev/MAVEN/mvn-repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="GuliMall-seckill" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="GuliMall-auth-server" options="-parameters" />
+      <module name="GuliMall-cart" options="-parameters" />
+      <module name="GuliMall-common" options="-parameters" />
+      <module name="GuliMall-coupon" options="-parameters" />
+      <module name="GuliMall-gateway" options="-parameters" />
+      <module name="GuliMall-member" options="-parameters" />
+      <module name="GuliMall-order" options="-parameters" />
+      <module name="GuliMall-product" options="-parameters" />
+      <module name="GuliMall-search" options="-parameters" />
+      <module name="GuliMall-seckill" options="-parameters" />
+      <module name="GuliMall-third-part" options="-parameters" />
+      <module name="GuliMall-ware" options="-parameters" />
+      <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
+    </option>
+  </component>
+</project>

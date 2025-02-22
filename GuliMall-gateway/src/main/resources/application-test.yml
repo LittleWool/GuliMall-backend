@@ -1,0 +1,19 @@
+server:
+  port: 15000
+
+spring:
+  #  application:
+  #    name: gulimall_product
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/gulimall_pms?serverTimezone=GMT%2b8
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.180:8848
+    alicloud:
+      access-key: LTAI5t8Gk7m5WBSDaxjtcbsR
+      secret-key: 9gKM537Xg5FlYBuGUkTtHZMynLjcSA
+      oss:
+        endpoint: oss-cn-beijing.aliyuncs.com
